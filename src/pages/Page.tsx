@@ -15,7 +15,7 @@ const Template = (props: Props) => {
       <h1 className="title">Page {props.name}</h1>
       <div>
         {pageList.map((name) => (
-          <button className="button" onClick={() => navigate(`/${name}`)}>
+          <button className="button" onClick={() => navigate(`/page-${name}`)}>
             Page {name}
           </button>
         ))}
