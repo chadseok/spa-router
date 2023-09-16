@@ -1,5 +1,6 @@
 import React from "react";
 import { RouterContext } from "./context";
+import { useNavigate } from "./hooks";
 
 export interface RouterProps {
   children: React.ReactNode;
@@ -57,4 +58,16 @@ export interface RouteProps {
 
 export function Route(props: RouteProps) {
   return props.component;
+}
+
+export interface NavigateProps {
+  to: string;
+}
+
+export function Navigate({ to }: NavigateProps) {
+  const navigate = useNavigate();
+
+  React.useEffect(() => navigate(to), [navigate, to]);
+
+  return null;
 }
