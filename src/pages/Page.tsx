@@ -1,7 +1,7 @@
 import "./Page.css";
 import { useNavigate } from "@/router";
 
-const pageList = ["A", "B", "C"] as const;
+const pageList = ["1", "2", "3"] as const;
 
 type Props = {
   name: (typeof pageList)[number];

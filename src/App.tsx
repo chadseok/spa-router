@@ -5,9 +5,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/A" component={<Page name="A" />} />
-        <Route path="/B" component={<Page name="B" />} />
-        <Route path="/C" component={<Page name="C" />} />
+        <Route path="/page-1" component={<Page name="1" />} />
+        <Route path="/page-2" component={<Page name="2" />} />
+        <Route path="/page-3" component={<Page name="3" />} />
       </Routes>
     </Router>
   );
